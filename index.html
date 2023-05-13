@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./styles.css"/>
+		<title>Jilli Billi - Portfolio</title>
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+		<script src="./script.js"></script>
+		<script>
+			$(document).ready(function() {
+					$('#submitRecom').click(function(){
+						$('.messagebox').css('visibility','visible');
+					})}
+					);
+			$(document).ready(function() {
+					$('#messageClose').click(function(){
+						$('.messagebox').css('visibility','hidden');
+					})}
+			);	
+		</script>
+	</head>
+	<body>
+		<div class="messagebox">
+			<img src="./img/confirm.png" width="48px" height="48px">
+			<p id="messageText" style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100); text-align: center;">Thanks for leaving a recommendation.</p>
+			<button id="messageClose" class="submitbutton" style="font-size: 17px;">close</button>
+		</div>
+		<div  id="homebutton" style="position: fixed; right: 0; bottom:0;width: 45px; height: 45px; margin: 10px; border-radius: 22.5px; display: grid; justify-content: center; align-items: center;">
+			<a href="#home"><img src="./img/home.png"></a>
+		</div>
+		<nav class = "topper" id="home">
+			<div class = "top-menu">
+				<div class="profile">
+				<div class="name-container">
+					<h3>Jilli Billi</h3>
+				</div>
+				<div class="email-container" style="height:10px">
+					<img src="./img/icons8-email-48.png" id="email-icon" alt="https://img.icons8.com/?size=512&id=SGCKpmr2U7Sq&format=png" width="24" height="24" >
+					<h4 style="padding-bottom:5px; padding-left:5px">Jilli@Billi.com</h4>
+				</div>
+				<div class="phone-container" style="height:40px">
+					<img src="./img/icons8-phone-48.png" id="phone-icon" alt="https://img.icons8.com/?size=512&id=WV326xpsBMyb&format=png" width="24" height="24" >
+					<h4 style="padding-bottom:5px; padding-left:5px">+1 999-999(9999)</h4>
+				</div>
+				</div>
+				<div class="navigation">
+					<a class="menu" href="#about" style="font-size:20px; color:rgb(50,50,50)">About Me</a>
+					<a class="menu" href="#skills" style="font-size:20px; color:rgb(50,50,50)">Skills</a>
+					<a class="menu" href="#projects" style="font-size:20px; color:rgb(50,50,50)">Projects</a>
+					<a class="menu" href="#recommendations" style="font-size:20px; color:rgb(50,50,50)">Recommendations</a>
+				</div>
+			</div>
+		</nav>
+		<div Class="AboutJilli" id="about">
+			<img src="./img/school-apple.gif" alt="https://tenor.com/view/school-apple-student-nbrchristy-gif-13854012" height="360" width="360" style="margin-top:50px;margin-left:100px;margin-right:100px;margin-bottom:50px;">
+			<div id="AboutParagraph" style="margin-top:100px">
+				<div Class="AboutHeader">
+					<h1 class="Header" style="font-size:40px">Hi, I'm Jilli Billi!</h1> <img src="./img/icons8-hand-peace.gif" height="48" width="48" style="margin-top:20px"> 
+				</div>
+				<div>
+					<p class="AboutMe" style="font-size:25px;color:rgb(100,100,100)">I am an aspiring computer programmer. In my free time, I enjoy learning more about coding languages. I am currently learning how to develop websites! So excited to learn more.</p>
+				</div>
+			</div>
+		</div>
+		<div id="skills">
+			<h1 class="Header"  style="margin-left:40px;margin-right:40px;">Skills</h1>
+			<div class = "skillscontainer" >
+				<div class = "skillschild">
+					<img src="./img/html5.png" height="48" width="48" >
+					<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100)">HTML</p>
+					<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100);font-size: 16px;">1 Year Experience</p>
+				</div>
+				<div class = "skillschild">
+					<img src="./img/CSS3.png" height="48" width="48" >
+					<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100)">CSS</p>
+					<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100);font-size: 16px;">1 Year Experience</p>
+				</div>
+				<div class = "skillschild">
+					<img src="./img/Excel.png" height="48" width="48" >
+					<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100)">Excel</p>
+					<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100);font-size: 16px;">1 Year Experience</p>
+				</div>
+				<div class = "skillschild">
+					<img src="./img/Python.png" height="48" width="48" >
+					<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100)">Python</p>
+					<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100);font-size: 16px;">1 Year Experience</p>
+				</div>
+				<div class = "skillschild">
+					<img src="./img/R.png" height="48" width="48" >
+					<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100)">R</p>
+					<p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:rgb(100,100,100);font-size: 16px;">1 Year Experience</p>
+				</div>
+			</div>
+		</div>
+		<div id="projects">
+			<h1 class="Header" style="margin-left:40px;margin-right:40px;">Projects</h1>
+			<h2 class="ProjectsHeader" style="margin-left:60px;margin-right:60px;color:rgb(100,100,100);font-family: Verdana, Geneva, Tahoma, sans-serif;">Name Matcher</h2>
+			<ul class="ProjectsHeader" style="margin-left:80px;margin-right:80px;color:rgb(100,100,100);font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:16px">
+				<li>Developed a code in python to find the most similar names to a given name</li>
+			</ul>
+			<hr class="hr">
+			<h2 class="ProjectsHeader" style="margin-left:60px;margin-right:60px;color:rgb(100,100,100);font-family: Verdana, Geneva, Tahoma, sans-serif;">Climate Change</h2>
+			<ul class="ProjectsHeader" style="margin-left:80px;margin-right:80px;color:rgb(100,100,100);font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:16px">
+				<li>Developed a statistical model to estimate the GHG emissions from vehicles</li>
+			</ul>
+			<hr class="hr">
+			<h2 class="ProjectsHeader" style="margin-left:60px;margin-right:60px;color:rgb(100,100,100);font-family: Verdana, Geneva, Tahoma, sans-serif;">Art Projects</h2>
+			<ul class="ProjectsHeader" style="margin-bottom:60px;margin-left:80px;margin-right:80px;color:rgb(100,100,100);font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:16px">
+				<li>Painted a lot of paintings using watercolor!</li>
+			</ul>
+		</div>
+		<div id="recommendations">
+			<h1 class="Header" style="margin-left:40px;margin-right:40px;">Recommendations</h1>
+			<div id="recomcontainterid" class="recomcontainter">
+				<div class="recom"><p>" Jilli is an amazing human being. She is artistic and also knows how to care for his friends. "</div>
+				<div class="recom"><p>" Jilli is my favorite artist in Albuquerque New Mexico. We have had a lot of conversations about different topics and I always enjoy her company. "</p></div>
+				<div class="recom"><p>" Working with Jilli was a great experience. We got to accomplish so many cool projects together. "</p></div>
+			</div>
+			<div class="recomformcontainer">
+				<h2 class="ProjectsHeader" style="margin-left:60px;margin-right:60px;color:rgb(100,100,100);font-family: Verdana, Geneva, Tahoma, sans-serif;">Leave a Recommendation</h2>
+				<input id="form_name" class="inputform" type="text" style="width:500px;margin-bottom:25px;" placeholder="Name (optional)">
+				<textarea id="form_text" class="inputform" style="width:500px;height:250px;margin-bottom:15px;" placeholder="Message..."></textarea>
+				<input id="submitRecom" class="submitbutton" type="submit" style="width:150px;height:40px;margin-bottom:50px;" value="Submit" onclick="submitForm();confirmMessage();clearForms()">
+			</div>
+		</div>
+		<footer>
+			<a target="_blank" href="https://icons8.com/icon/Y4oVsnp75qny/hand-peace">Hand Peace</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>. 
+			<a target="_blank" href="https://icons8.com/icon/13441/python">Python</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>. 
+			<a target="_blank" href="https://icons8.com/icon/ddMdoLrkgZkC/r">R</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>. 
+			<a target="_blank" href="https://icons8.com/icon/117561/microsoft-excel-2019">Excel</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>. 
+			<a target="_blank" href="https://icons8.com/icon/14096/home">Home</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>. 
+			<a target="_blank" href="https://icons8.com/icon/98955/done">confirm</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>.
+		</footer>
+	</body>
+</html>
