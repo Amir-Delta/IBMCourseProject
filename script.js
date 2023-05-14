@@ -23,6 +23,6 @@ function confirmMessage() {
 }
 
 function clearForms() { 
-    recomName =document.getElementById("form_name").value=""
-    recomName =document.getElementById("form_text").value=""
+    recomName = document.getElementById("form_name").value=""
+    recomName = document.getElementById("form_text").value=""
 }
